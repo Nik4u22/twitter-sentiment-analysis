@@ -1,0 +1,11 @@
+version:  "3.7"
+
+services:
+  mlapp:
+    container_name: twitter_sentiment_analysis
+    image: nikhiljagnade22/twitter_sentiment_analysis
+    ports:
+      - "8080:8080"
+    build:
+      context: .
+      dockerfile: Dockerfile
